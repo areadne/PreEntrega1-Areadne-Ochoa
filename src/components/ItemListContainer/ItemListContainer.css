@@ -1,0 +1,17 @@
+.contenedor_articulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    width: 220px;
+    padding: 10px;
+}
+
+.Acido_Hialuronico{
+    width: 200px;
+    height: 200px;
+}
+
+.titulo_del_producto{
+    text-align: center;
+}

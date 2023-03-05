@@ -1,0 +1,23 @@
+
+.navbar_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background: black;
+    border-bottom: 1px solid rgb(233, 231, 231);
+}
+
+.link_navbar{
+    display: flex;
+    cursor: pointer;
+    margin-left: 10px;
+    align-content: center;
+    flex-direction: row;
+    color: azure;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+

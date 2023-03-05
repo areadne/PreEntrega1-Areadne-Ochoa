@@ -1,0 +1,19 @@
+.contenedor_carrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    padding-left: 150px;
+}
+
+.logo_carrito{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.numero_en_carrito{
+    color: azure;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
