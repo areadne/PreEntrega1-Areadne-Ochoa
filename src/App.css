@@ -39,6 +39,6 @@ header{
 }
 
 .contenedor_productos{
-  height: 400px;
+  height: auto;
   padding: 20px;
 }

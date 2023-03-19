@@ -1,0 +1,31 @@
+.contenedor_articulo_ItemDetail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    text-align: justify;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+}
+
+.titulo_del_producto_ItemDetail{
+    padding-top: 10px;
+}
+
+.imagen_producto_ItemDetail{
+    padding-top: 20px;
+    width: 500px;
+}
+
+.precio{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.texto_descripcion{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

@@ -1,19 +1,41 @@
 import "./ItemListContainer.css";
-import { Button } from "react-bootstrap";
-import Acido_Hialuronico from '../../assets/imgs/Acido_Hialuronico.jpg'
+import "bootstrap/dist/css/bootstrap.min.css";
+import { pedirDatos } from "../../helpers/PedirDatos";
+import { ItemList } from "../ItemList/ItemList";
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
-export const ItemListContainer = ({ saludo }) => {
+export const ItemListContainer = () => {
+  const [productos, setProductos] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const { categoria } = useParams();
+  console.log(categoria);
+
+  useEffect(() => {
+    setLoading(true);
+
+    pedirDatos()
+      .then((res) => {
+        if (categoria) {
+          setProductos(res.filter((prod) => prod.categoria === categoria));
+        } else {
+          setProductos(res);
+        }
+      })
+      .catch((error) => {
+        console.log(`Error al traer datos: ${error}`);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }, [categoria]);
+
+
   return (
 
-    <article className="contenedor_articulo">
-
-      <h5 className='titulo_del_producto'>{saludo}</h5>
-      <img src={Acido_Hialuronico} className="Acido_Hialuronico" alt="foto_acido_hialuronico"></img>
-      <p>10.000 CLP</p>
-      
-      <Button variant="dark">Agregar</Button>
-
-    </article>
-
+    <div className="contenedor_productos">
+      {loading ? <h2>...</h2> : <ItemList items={productos} />}
+    </div>
   );
 };
