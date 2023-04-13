@@ -1,0 +1,17 @@
+.contenedor-carrito-vacio{
+    align-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    
+}
+
+
+.icono-alerta{
+    width: 200px;
+}
+
+.texto-carrito-vacio{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+

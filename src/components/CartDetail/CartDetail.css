@@ -1,0 +1,36 @@
+.div-carrito-compras{
+    text-align: center;
+    align-items: center;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+
+}
+
+.contenedor-articulos-del-carrito{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.articulo-en-carrito{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 220px;
+    padding: 10px;
+}
+
+
+.terminar-compra{
+    padding-left: 100px;
+}
+
+.imagen_producto_carrito{
+    width: 200px;
+}

@@ -29,3 +29,9 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+.botones-contador{
+    display: flex;
+    gap: 16px;
+    padding-bottom: 20px;
+}
