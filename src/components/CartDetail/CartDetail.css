@@ -1,10 +1,6 @@
 .div-carrito-compras{
     text-align: center;
     align-items: center;
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center; */
-
 }
 
 .contenedor-articulos-del-carrito{
@@ -13,19 +9,15 @@
     justify-content: center;
 }
 
-
-
 .articulo-en-carrito{
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     background: white;
-    width: 220px;
+    width: 320px;
     padding: 10px;
 }
-
 
 .terminar-compra{
     padding-left: 100px;
@@ -33,4 +25,18 @@
 
 .imagen_producto_carrito{
     width: 200px;
+    background-color:#ffffff;
+	border-color:#b3afaf;
+	border-width:2px 2px 4px 2px;
+	border-style:solid;
+	border-radius:40px;
+	color:#ffffff !important;
+	padding:15px;
+	text-align:center;
+	text-decoration:none;
+	display:inline-block;
+	font-size:0.9em;
+	font-weight:bold;
+	margin:4px 2px;
+    cursor:pointer;
 }

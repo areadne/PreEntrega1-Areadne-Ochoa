@@ -1,0 +1,16 @@
+.nosotros-container{
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.titulo{
+    align-content: center;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.texto{
+    text-align: justify;
+}
